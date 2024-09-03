@@ -25,4 +25,5 @@ eureka:
 #      defaultZone: http://localhost:8761/eureka/
 #      defaultZone: http://social-network-discovery:8761/eureka/
 #      defaultZone: social-network-discovery:8761
-      defaultZone: 89.111.174.153:8761
+      defaultZone: http://89.111.174.153:8761/eureka/
+#      defaultZone: 89.111.174.153:8761
