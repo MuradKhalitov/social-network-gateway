@@ -17,6 +17,9 @@ public class GatewayConfig {
                 .route("social-network-auth",
                         r -> r.path("/api/v1/auth/**")
                                 .uri("lb://SOCIAL-NETWORK-AUTH"))
+                .route("social-network-dialog",
+                        r -> r.path("/api/v1/dialogs/**")
+                                .uri("lb://SOCIAL-NETWORK-DIALOG"))
                 .build();
     }
 
