@@ -40,17 +40,5 @@ public class GatewayConfig {
                     log.info("Response: {} {} {}", exchange.getResponse().getStatusCode(), request.getPath(), request.getURI())));
         };
     }
-    // INFO ru.skillbox.gateway.config.GatewayConfig - Request: GET /api/v1/account/users http://localhost:8080/api/v1/account/users
-    // INFO ru.skillbox.gateway.config.GatewayConfig - Response: 200 OK /api/v1/account/users http://localhost:8080/api/v1/account/users
-
-//    @Bean
-//    public GlobalFilter loggingFilter() {
-//        return (exchange, chain) -> {
-//            ServerHttpRequest request = exchange.getRequest();
-//            log.info("Request: {} {} {}", request.getMethod(), request.getPath(), request.getURI());
-//            return chain.filter(exchange);
-//        };
-//    }
-//    // INFO  ru.skillbox.gateway.config.GatewayConfig  - Request: GET /api/v1/account/users  http://localhost:8080/api/v1/account/users
 
 }
