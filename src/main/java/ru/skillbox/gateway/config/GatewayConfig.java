@@ -31,6 +31,9 @@ public class GatewayConfig {
                 .route("social-network-geo-storage",
                         r -> r.path("/api/v1/geo/**", "/api/v1/storage/**")
                                 .uri("lb://SOCIAL-NETWORK-GEO-STORAGE"))
+                .route("social-network-friend6",
+                        r -> r.path("/api/v1/friends/**")
+                                .uri("lb://SOCIAL-NETWORK-FRIENDS"))
                 .build();
     }
 
