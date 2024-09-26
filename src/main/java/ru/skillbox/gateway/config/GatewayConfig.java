@@ -34,6 +34,9 @@ public class GatewayConfig {
                 .route("social-network-friend6",
                         r -> r.path("/api/v1/friends/**")
                                 .uri("lb://SOCIAL-NETWORK-FRIENDS"))
+                .route("social-network-notification",
+                        r -> r.path("/api/v1/notifications/**")
+                                .uri("lb://SOCIAL-NETWORK-NOTIFICATION"))
                 .build();
     }
 
